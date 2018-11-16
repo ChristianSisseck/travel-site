@@ -594,18 +594,25 @@ a {
 
 .page-section{
   padding: 1.5rem 0;
+
 }
 
 @media(min-width: 800px){
 
 .page-section{
     padding: 4.5rem 0
+
 }
  }
 
 .page-section--blue {
     background-color:#2f5572;
     color: #fff;
+  }
+
+.page-section--testimonials {
+    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-size: cover;
   }
 
 .headline{
@@ -774,6 +781,10 @@ padding-right: 65px;
       display: inline-block
   }
  }
+
+.section-title__blue {
+    color: #2f5572;
+  }
 
 .feature-item {
   position: relative;
