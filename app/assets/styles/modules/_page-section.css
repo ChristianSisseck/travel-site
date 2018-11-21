@@ -1,14 +1,14 @@
 .page-section{
   padding: 1.5rem 0;
 
-  @mixin atLarge{
+  @mixin atMedium{
     padding: 4.5rem 0;
   }
 
   &--no-b-until-medium{
     padding-bottom: 0;
 
-    @mixin atLarge{
+    @mixin atMedium{
     padding-bottom: 4.5rem
     }
 
