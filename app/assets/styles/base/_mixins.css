@@ -23,3 +23,4 @@
     display: table;
   }
 }
+/*If an element is taller than the element containing it, and it is floated, it will overflow outside of its container.*/

@@ -66,6 +66,37 @@ padding-right: 65px;
 
 }
 
+@mixin atLarge {
+
+&__b-margin-until-large{
+    margin-bottom: 0rem;
+  }
+
+&__large-4 {
+  float: left;
+  width: 33%;
+}
+
+&__large-4--larger {
+  width: 37%;
+}
+
+&__large-8 {
+  float: left;
+  width: 66%;
+}
+
+&__large-8--smaller {
+  width: 63%
+}
+
+&__large-6 {
+  float: left;
+  width: 50%;
+}
+
+}
+
 /*Begin Equal Height Rules */
 
 &--equal-height-at-medium {
