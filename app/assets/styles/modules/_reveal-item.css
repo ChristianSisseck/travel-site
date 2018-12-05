@@ -1,0 +1,13 @@
+.reveal-item{
+  opacity: 0;
+  transition: all 1.5s ease-out;/* In this  example, both Scale and opacity
+                                    will transition, due to the value
+                                    “all” specified for the transition-property
+                                      portion of the shorthand*/
+  transform: scale(1.15);
+
+  &--is-visible{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
