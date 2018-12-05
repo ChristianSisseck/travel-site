@@ -1375,3 +1375,20 @@ padding-top: 10px;
 
 }
  }
+
+.reveal-item{
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;/* In this  example, both Scale and opacity
+                                    will transition, due to the value
+                                    “all” specified for the transition-property
+                                      portion of the shorthand*/
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.reveal-item--is-visible{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
