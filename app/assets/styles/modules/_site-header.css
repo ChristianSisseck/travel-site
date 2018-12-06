@@ -11,7 +11,13 @@ transition: background-color .3s ease-out;
 }
 
 @mixin atMedium{
+  position:fixed;
   background-color: rgba($mainBlue, .3);
+
+&--dark {
+  background-color: rgba(23, 51, 72, .85);
+}
+
 }
 
 
@@ -24,6 +30,7 @@ transition: background-color .3s ease-out;
 &__logo {
   left: 50%;
   transform: translate(-50%) scale(.8); /* transform: Elementet regner sig selv med ift. placeringen, så det placeres i midten med 50% værdien */
+  transition: transform .3s ease-out;
   background-color: $mainBlue;
   transform-origin: 50% 0%; /*Manipulation af transform element, kan opnås med transform origin*/
   padding: 25px 36px;
@@ -33,6 +40,10 @@ transition: background-color .3s ease-out;
   @mixin atMedium{
     transform: translate(0); /* Element regner sig selv med, så det placeres i midten*/
     left: auto;
+
+    .site-header--dark &{
+      transform:scale(.61)
+    }
   }
 }
 

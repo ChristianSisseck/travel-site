@@ -1147,9 +1147,14 @@ transition: background-color .3s ease-out;
 @media(min-width: 800px){
 
 .site-header {
+  position:fixed;
   background-color: rgba(47,85,114, .3)
 
 
+}
+
+.site-header--dark {
+  background-color: rgba(23, 51, 72, .85);
 }
  }
 
@@ -1164,6 +1169,10 @@ transition: background-color .3s ease-out;
   left: 50%;
   -webkit-transform: translate(-50%) scale(.8);
           transform: translate(-50%) scale(.8); /* transform: Elementet regner sig selv med ift. placeringen, så det placeres i midten med 50% værdien */
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   background-color: #2f5572;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%; /*Manipulation af transform element, kan opnås med transform origin*/
@@ -1179,6 +1188,11 @@ transition: background-color .3s ease-out;
             transform: translate(0); /* Element regner sig selv med, så det placeres i midten*/
     left: auto
 }
+
+    .site-header--dark .site-header__logo{
+      -webkit-transform:scale(.61);
+              transform:scale(.61)
+    }
  }
 
 .site-header__logo__graphic {
@@ -1374,6 +1388,10 @@ padding-top: 10px;
     background-color: transparent
 
 }
+
+    .primary_nav a.is-current-link { /* &. means that only if a has a class of is-current-link*/
+      color: #fabb69;
+    }
  }
 
 .reveal-item{
