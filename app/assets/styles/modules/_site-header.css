@@ -42,7 +42,7 @@ transition: background-color .3s ease-out;
     left: auto;
 
     .site-header--dark &{
-      transform:scale(.61)
+      transform:scale(.60)
     }
   }
 }
